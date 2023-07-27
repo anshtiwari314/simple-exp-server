@@ -4,10 +4,11 @@ const express = require('express')
 let app = express()
 dotenv.config()
 let PORT = process.env.PORT || 5010
+let HOST = process.env.HOST || '127.0.0.1'
+console.log("the current port and host",PORT,HOST)
 
-console.log("the current port is",PORT)
-
-app.set('host', process.env.HOST || '0.0.0.0');
+app.set('host', HOST);
+console.log()
 var server = new Turn({
   // set options
   listeningPort:PORT,
