@@ -7,6 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node turn-server.js"
   },
+  "engines": {
+  "node": "22.11.0"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
